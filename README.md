@@ -1,6 +1,6 @@
 # Encriptador de Texto 🕵️
 
-Projeto referente ao evento `Semana Front End` oferecido pela [Digital Innovation One](https://digitalinnovation.one/). Projeto construído para fins didáticos, com o objetivo de colocar em prática os conhecimentos de HTML, CSS, JavaScript e banco de dados FireBase.
+Projeto referente a trilha de `Iniciante em Programação` oferecido pela [Alura](https://www.alura.com.br/). Projeto construído para fins didáticos, com o objetivo de colocar em prática os conhecimentos passado no curso através da construção de um encriptador/desencriptador de texto.
 
 <p align="center">
     <img width="700" src="https://user-images.githubusercontent.com/99627115/188927275-4e3e40bd-511d-40b3-a9f9-adde9cad6d89.jpg">
