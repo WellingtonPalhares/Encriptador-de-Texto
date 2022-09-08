@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de Texto</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+  </head>
+
+  <body>
+    <main>
+      <section id="logo">
+        <img src="/assets/img/Logo.png" alt="Imagem do logo da Alura" class="imagem-alura">
+      </section>
+
+      <section id="section-area-digitacao">
+        <textarea name="" id="area-texto" cols="30" rows="10" placeholder="Digite o texto"></textarea>
+        <p>Apenas letras minúsculas e sem acento</p>
+        <div class="botoes">
+          <button onclick="btnEncriptar()" class="botao-criptografar">Criptografar</button>
+          <button onclick="btnDesencriptar()" class="botao-descriptografar">Descriptografar</button>
+        </div>
+      </section>
+
+      <section id="section-texto-pronto">
+        <div class="msg-alerta">
+          <div class="bloco-msg-alerta">
+            <img src="/assets/img/msg.png" class="imagem-alerta"> 
+            <h2>Nenhuma mensagem encontrada</h2>
+            <h3>Digite um texto que você deseja criptografar ou descriptografar.</h3>
+          </div>
+        </div>
+        <div class="area-mensagem">
+          <textarea name="" id="texto-resultado" cols="30" rows="10"></textarea>
+          <div class="area-botao-copiar">
+            <button type="button" onclick="copiar()" class="botao-copiar">Copiar</button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="/assets/js/script.js"></script>
+  </body>
+
+
+</html>

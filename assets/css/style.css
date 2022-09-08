@@ -1,0 +1,372 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+/* GERAL */
+main {
+  display: flex;
+}
+
+body{
+  background-color: rgb(33, 40, 50);
+}
+
+textarea:focus {
+  outline: 0;
+}
+
+textarea::-webkit-scrollbar-track {
+  background-color: rgb(42, 71, 96);
+  border-radius: 20px;
+}
+
+textarea::-webkit-scrollbar {
+  background-color: rgb(0, 71, 96);
+  width: 10px;
+  border-radius: 20px;
+}
+
+textarea::-webkit-scrollbar-thumb {
+  background-color: rgb(255, 66, 76);
+  border-radius: 20px;
+}
+
+/* LOGO */
+
+.imagem-alura {
+  margin-top: 35px;
+  margin-left: 30px;
+  margin-right: 40px; 
+  width: 32px;
+}
+
+/* SECTION ÁREA DE DIGITAÇÃO */
+
+#section-area-digitacao {
+  margin-top: 70px;
+  width: 680px;
+  margin-right: 40px;
+  margin-left: 20px;
+}
+
+#area-texto{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  background-color: rgb(33, 40, 50);
+  color: rgb(255, 67, 77);
+  border: none ;
+  width: 680px;
+  height: 380px;
+  margin-bottom: 20px;
+}
+
+#area-texto::placeholder {
+  color: rgb(255, 66, 76);
+}
+
+#section-area-digitacao p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  color: rgb(221, 221, 221);
+}
+
+.botoes {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.botao-criptografar {
+  font-family: 'Montserrat', sans-serif;
+  width: 328px;
+  height: 67px;
+  border-radius: 24px;
+  padding: 24px;
+  gap: 8px;
+  background-color: rgb(255, 67, 77);
+  font-size: 16px;
+  color: rgb(221, 221, 221);
+  font-style: normal;
+  border-color: transparent;
+  transition: 1s;
+}
+
+.botao-criptografar:hover {
+  background-color: rgb(42, 71, 96);
+  color: rgb(255, 67, 77);
+}
+
+.botao-descriptografar {
+  width: 328px;
+  height: 67px;
+  border-radius: 24px;
+  padding: 24px;
+  gap: 8px;
+  background-color: rgb(221, 221, 221);
+  font-size: 16px;
+  color: #ff434d;
+  font-style: normal;
+  border-color: transparent;
+  transition: 1s;
+}
+
+.botao-descriptografar:hover {
+  background-color: rgb(42, 71, 96);
+  color: rgb(255, 67, 77);
+}
+
+/* SECTION ÁREA DO TEXTO CRIPTOGRAFADO */
+
+#section-texto-pronto{
+  margin-top: 35px;
+  width: 450px;
+  padding-right: 25px ;
+  padding-left: 25px;
+}
+
+#texto-resultado {
+  background-color: rgb(42, 71, 96);
+  border: none;
+  border-radius: 12px;
+  width: 370px;
+  box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.3);
+  border-radius: 32px;
+  height: 550px;
+  position: absolute;
+  color: rgb(221, 221, 221);
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  padding-top: 30px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.msg-alerta {
+  font-size: 0.7rem;
+  color: rgb(221, 221, 221);
+  font-family: 'Montserrat', sans-serif;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  background-color: rgb(42, 71, 96);
+  border: none;
+  border-radius: 12px;
+  width: 400px;
+  box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.3);
+  border-radius: 32px;
+  height: 580px;
+}
+
+.bloco-msg-alerta {
+  padding-top: 110px;
+}
+
+.imagem-alerta {
+  width: 300px;
+}
+
+.area-botao-copiar {
+  margin-left: 35px;
+  margin-right: 35px;
+}
+
+.botao-copiar {
+  width: 328px;
+  height: 67px;
+  border-radius: 24px;
+  padding: 24px;
+  gap: 8px;
+  background-color: rgb(42, 71, 96);
+  font-size: 16px;
+  color: rgb(255, 67, 77);
+  font-style: normal;
+  border-color: rgb(255, 67, 77);
+  border-style:double;
+  position: relative;
+  margin-top: 485px;
+  transition: 1s;
+}
+
+.botao-copiar:hover {
+  background-color: rgb(255, 67, 77);
+  color: rgb(221, 221, 221);
+}
+
+/* RESPONSIVIDADE TABLETS */
+
+@media only screen and (min-width: 481px) and (max-width: 900px) {
+
+  /* GERAL */
+
+  main {
+    flex-direction: column;
+    margin-right: 30px;
+    margin-left: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 0;
+  }
+
+  /* LOGO */
+
+  .imagem-alura {
+    margin: 0;
+  }
+
+  /* SECTION ÁREA DE DIGITAÇÃO */
+
+  #section-area-digitacao {
+    margin-top: 30px;
+    margin-left: 0px;
+    margin-right: 0px;
+    width: 100%;
+  }
+
+  #area-texto{
+    width: 100%;
+    height: 300px;
+  }
+
+  .botoes {
+    width: 100%;
+    justify-content: space-evenly;
+  }
+
+  .botao-criptografar {
+    width: 230px;
+  }
+
+  .botao-descriptografar {
+    width: 230px;
+  }
+
+  /* SECTION ÁREA DO TEXTO CRIPTOGRAFADO */
+
+  #section-texto-pronto{
+    margin: 0;
+    margin-top: 35px;
+    width: 100%;
+    padding: 0;
+  }
+
+  #texto-resultado {
+    width: 95%;
+    height: 350px;
+    position: relative;
+  }
+
+  .msg-alerta {
+    width: 100%;
+    height: 200px;
+  }
+
+  .bloco-msg-alerta {
+    padding-top: 60px;
+  }
+
+  .imagem-alerta {
+    display: none;
+  }
+
+  .area-botao-copiar {
+    margin: 0;
+  }
+
+  .botao-copiar {
+    top: 870px;
+    left: 0;
+    right: 0;
+    width: 200px;
+    position: absolute;
+    margin: auto;
+    background-color: rgb(42, 71, 96);
+  }
+}
+
+/* RESPONSIVIDADE CELULARES */
+
+@media only screen and (min-width: 300px) and (max-width: 480px) {
+  
+  /* GERAL */
+
+  main {
+    flex-direction: column;
+    margin-right: 15px;
+    margin-left: 15px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 0;
+  }
+
+  /* LOGO */
+
+  .imagem-alura {
+    margin: 0;
+  }
+
+  /* SECTION ÁREA DE DIGITAÇÃO */
+
+  #section-area-digitacao {
+    margin-top: 30px;
+    width: 100%;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  #area-texto{
+    width: 100%;
+    height: 300px;
+  }
+
+  .botoes {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .botao-criptografar {
+    width: 200px;
+    margin-bottom: 10px;
+  }
+
+  .botao-descriptografar {
+    width: 200px;
+  }
+
+  /* SECTION ÁREA DO TEXTO CRIPTOGRAFADO */
+
+  #section-texto-pronto{
+    margin: 0;
+    margin-top: 35px;
+    width: 100%;
+    padding: 0;
+  }
+
+  #texto-resultado {
+    width: 92%;
+    height: 350px;
+    position: relative;
+    margin-bottom: 15px;
+  }
+
+  .msg-alerta {
+    width: 100%;
+    height: 200px;
+  }
+
+  .bloco-msg-alerta {
+    padding-top: 50px;
+  }
+
+  .imagem-alerta {
+    display: none;
+  }
+
+  .botao-copiar {
+    top: 955px;
+    left: 0;
+    right: 0;
+    width: 160px;
+    background-color: rgb(42, 71, 96);
+    position: absolute;
+    margin: auto;
+  }
+}
